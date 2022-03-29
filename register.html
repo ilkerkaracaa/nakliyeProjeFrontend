@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nakliye Proje - Giriş Yap</title>
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!--Main CSS-->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!--Ubuntu Mono Font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+    <!--Bootstrap Icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <!--Aos CSS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!--Preloader-->
+    <div class="loader-wrapper">
+        <div class="loader"></div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <!--Navbar-->
+            <div class="col-12 shadow-lg bg-body p-0 my-sm-4">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark-primary py-4">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">NAKLİYE PROJESİ</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-house"></i>
+                                        Ana Sayfa</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><i class="bi bi-person-fill"></i> Giriş Yap</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><i class="bi bi-person-heart"></i> Kayıt Ol</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><i class="bi bi-file-earmark-plus"></i> İlan Ver</a>
+                                </li>
+                            </ul>
+                            <form class="d-flex">
+                                <input class="form-control me-2" type="search" placeholder="Arama" aria-label="Search">
+                                <button class="btn bg-accent text-color btn-lg" type="submit"><i
+                                        class="bi bi-search"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <!--Left Banner-->
+            <div class="col-2 d-none d-sm-block">
+                <img id="left-banner" src="assets/img/b2.png"
+                    class="img-fluid sticky-top shadow bg-body border border-2" style="z-index: -1">
+            </div>
+            <!--Main-->
+            <div class="col-sm-8 shadow-lg p-sm-4 border border-2">
+                <div class="row g-4">
+                    <!--Top Banner-->
+                    <div class="col-12 text-center">
+                        <img src="assets/img/b1.png" class="img-fluid shadow bg-body ">
+                    </div>
+                    <!--Filter Options Button-->
+                    <div class="col-12">
+                        <h1><i class="bi bi-person-heart"></i> KAYIT OL</h1>
+                        <hr>
+                    </div>
+                    <!--Register Form-->
+                    <div class="col-12">
+                        <form class="row g-2">
+                            <div class="col-md-12">
+                                <label for="inputEposta" class="form-label">Eposta</label>
+                                <input type="email" class="form-control" id="inputEposta" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="inputSifre" class="form-label">Şifre</label>
+                                <input type="password" class="form-control" id="inputSifre" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="inputSifreTekrar" class="form-label">Şifre Tekrar</label>
+                                <input type="password" class="form-control" id="inputSifreTekrar" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="inputAd" class="form-label">Ad</label>
+                                <input type="text" class="form-control" id="inputAd" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="inputSoyad" class="form-label">Soyad</label>
+                                <input type="text" class="form-control" id="inputSoyad" required>
+                            </div>
+                            <div class="col-12">
+                                <label for="inputTelefon" class="form-label">Telefon</label>
+                                <input type="text" class="form-control" id="inputTelefon" placeholder="5551112233" required>
+                            </div>
+                            <div class="col-12">
+                                <label for="inputAddres" class="form-label">Addres</label>
+                                <input type="text" class="form-control" id="inputAddres" placeholder="Mh., Sk., No.,Kat." required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="inputIl" class="form-label">İl</label>
+                                <select id="inputIl" class="form-select" required>
+                                    <option selected>İzmir</option>
+                                    <option>Denizli</option>
+                                </select>
+                            </div>
+                            <div class="col-md-4">
+                                <label for="inputIlce" class="form-label">İlçe</label>
+                                <select id="inputIlce" class="form-select" required>
+                                    <option value="izmir" selected>İzmir</option>
+                                    <option value="denizli">Denizli</option>
+                                </select>
+                            </div>
+                            <div class="col-md-2">
+                                <label for="inputPosta" class="form-label">Posta K.</label>
+                                <input type="text" class="form-control" id="inputPosta" required>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="inputSozlesme" required>
+                                    <label class="form-check-label" for="inputSozlesme">
+                                        <a href="#">Sözleşmeyi</a> onaylıyorum.
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="d-grid g-2">
+                                    <button type="submit" class="btn btn-primary">Kayıt Ol</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!--Right Banner-->
+            <div class="col-2 d-none d-sm-block">
+                <img src="assets/img/b2.png" class="img-fluid sticky-top shadow bg-body border border-2"
+                    style="z-index: -1">
+            </div>
+            <!--Footer-->
+            <div class="col-12 text-center p-4 shadow-lg bg-dark-primary text-light my-sm-4 mt-4">
+                <div class="row g-2">
+                    <div class="col-sm-4 border-end">
+                        Nakliye Projesi © 2022
+                    </div>
+                    <div class="col-sm-4 border-end">
+                        <i class="bi bi-facebook"></i>
+                        <i class="bi bi-instagram"></i>
+                        <i class="bi bi-whatsapp"></i>
+                    </div>
+                    <div class="col-sm-4">
+                        Email: info@nakliyeprojesi.com
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Filter Options-->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Filtre Seçenekleri</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, odio?
+            </div>
+        </div>
+    </div>
+
+    <!--AOS JS-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!--Bootstrap JS-->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!--Main JS-->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
