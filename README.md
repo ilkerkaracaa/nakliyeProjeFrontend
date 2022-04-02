@@ -4,3 +4,4 @@
 - [Giriş Yap](https://cnrats.github.io/nakliyeProjeFrontend/login.html)
 - [Kayıt Ol](https://cnrats.github.io/nakliyeProjeFrontend/register.html)
 - [Profil](https://cnrats.github.io/nakliyeProjeFrontend/profile.html)
+- [Firmalar]((https://cnrats.github.io/nakliyeProjeFrontend/companies.html))
