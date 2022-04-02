@@ -71,19 +71,61 @@
             <div class="col-lg-6 p-4">
                 <form class="row g-2">
                     <div class="col-12">
-                        <h2><i class="bi bi-door-open"></i> Giriş Yap</h2>
+                        <h2><i class="bi bi-pencil-square"></i> Kayıt Ol</h2>
                     </div>
-                    <div class="col-12">
+                    <div class="col-6">
+                        <label for="inputAd" class="form-label">Ad</label>
+                        <input type="text" class="form-control" id="inputAd" required>
+                    </div>
+                    <div class="col-6">
+                        <label for="inputSoyad" class="form-label">Soyad</label>
+                        <input type="text" class="form-control" id="inputSoyad" required>
+                    </div>
+                    <div class="col-6">
                         <label for="inputEmail" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="inputEmail">
+                        <input type="email" class="form-control" id="inputEmail" required>
+                    </div>
+                    <div class="col-6">
+                        <label for="inputNick" class="form-label">Kullanıcı Adı</label>
+                        <input type="text" class="form-control" id="inputNick" required>
+                    </div>
+                    <div class="col-6">
+                        <label for="inputSifre" class="form-label">Şifre</label>
+                        <input type="password" class="form-control" id="inputSifre" required>
+                    </div>
+                    <div class="col-6">
+                        <label for="inputSifreTekrar" class="form-label">Şifre Tekrar</label>
+                        <input type="password" class="form-control" id="inputSifreTekrar" required>
+                    </div>
+                    <div class="col-4">
+                        <label for="inputIl" class="form-label">İl</label>
+                        <select class="form-control" id="inputIl" required>
+                            <option>Denizli</option>
+                        </select>
+                    </div>
+                    <div class="col-4">
+                        <label for="inputIlce" class="form-label">İlçe</label>
+                        <select class="form-control" id="inputIlce" required>
+                            <option>Pamukkale</option>
+                        </select>
+                    </div>
+                    <div class="col-4">
+                        <label for="inputMahalle" class="form-label">Mahalle</label>
+                        <select class="form-control" id="inputMahalle" required>
+                            <option>Kınıklı</option>
+                        </select>
                     </div>
                     <div class="col-12">
-                        <label for="inputSifre" class="form-label">Şifre</label>
-                        <input type="password" class="form-control" id="inputSifre">
+                        <label for="inputAdres" class="form-label">Adres</label>
+                        <input type="text" class="form-control" id="inputAdres" required>
+                    </div>
+                    <div class="col-12">
+                        <label class="form-check-label" for="inputSozlesme"><span><a href="#">Sözleşme</a></span>'yi okudum onaylıyorum.</label>
+                        <input type="checkbox" class="form-check-input" id="inputSozlesme" required>
                     </div>
                     <div class="col-12">
                         <div class="d-grid g-2">
-                            <input type="submit" value="Giriş Yap" class="btn btn-secondary">
+                            <input type="submit" value="Kayıt Ol" class="btn btn-secondary">
                         </div>
                     </div>
                 </form>
@@ -107,55 +149,6 @@
                         Email: info@nakliyeprojesi.com
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-
-    <!--Filter Options-->
-    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-        <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Filtre Seçenekleri</h5>
-            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-            <div>
-                <form class="row g-2">
-                    <div class="col-12">
-                        <label for="inputKelime" class="form-label">Kelime</label>
-                        <input type="text" class="form-control">
-                    </div>
-                    <div class="col-6">
-                        <label for="inputFiyatMin" class="form-label">Min. Fiyat</label>
-                        <input type="number" class="form-control">
-                    </div>
-                    <div class="col-6">
-                        <label for="inputFiyatMax" class="form-label">Max. Fiyat</label>
-                        <input type="number" class="form-control">
-                    </div>
-                    <div class="col-12">
-                        <label for="inputIl" class="form-label">İl</label>
-                        <select class="form-control" id="inputIl">
-              <option>Denizli</option>
-            </select>
-                    </div>
-                    <div class="col-12">
-                        <label for="inputIlce" class="form-label">İlçe</label>
-                        <select class="form-control" id="inputIlce">
-              <option>Pamukkale</option>
-            </select>
-                    </div>
-                    <div class="col-12">
-                        <div class="form-check form-switch">
-                            <input class="form-check-input" type="checkbox" id="inputOzellik">
-                            <label class="form-check-label" for="inputOzellik">Özellik</label>
-                        </div>
-                    </div>
-                    <div class="col-12">
-                        <div class="g-2 d-grid">
-                            <input class="btn btn-dark" type="submit" value="Filtrele">
-                        </div>
-                    </div>
-                </form>
             </div>
         </div>
     </div>
