@@ -37,16 +37,18 @@
                     <div class="container-fluid">
                         <a class="navbar-brand" href="#">NAKLİYE PROJESİ</a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <form class="d-flex my-4 my-lg-0">
                                 <input class="form-control me-2 bg-dark text-light" type="search" placeholder="Arama" aria-label="Search">
-                                <button class="btn btn-lg btn-secondary" type="submit"><i class="bi bi-search"></i></button>
+                                <button class="btn btn-lg btn-secondary" type="submit"><i
+                                        class="bi bi-search"></i></button>
                             </form>
                             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                                 <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-house"></i> Ana Sayfa</a>
+                                    <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-house"></i>
+                                        Ana Sayfa</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="#"><i class="bi bi-person-fill"></i> Giriş Yap</a>
@@ -72,8 +74,9 @@
                     <!--Mobile Filter Window-->
                     <div class="col-12 d-block d-lg-none">
                         <div class="d-grid gap-2 my-2">
-                            <button class="btn btn-secondary btn-lg" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"><i class="bi bi-gear"></i> Filtre
-                Seçenekleri</button>
+                            <button class="btn btn-secondary btn-lg" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"><i
+                                    class="bi bi-gear"></i> Filtre
+                                Seçenekleri</button>
                         </div>
                     </div>
                     <!--Desktop Filter Section-->
@@ -87,30 +90,68 @@
                                 <input type="text" class="form-control">
                             </div>
                             <div class="col-12">
+                                <label for="inputUrunCesidi" class="form-label">Ürün Çeşidi</label>
+                                <select class="form-control" id="inputUrunCesidi">
+                                    <option>Deneme</option>
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <label for="inputNereden" class="form-label">Nereden</label>
+                                <select class="form-control" id="inputNereden">
+                                    <option>Deneme</option>
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <label for="inputNereye" class="form-label">Nereye</label>
+                                <select class="form-control" id="inputNereye">
+                                    <option>Deneme</option>
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <label for="inputUlke" class="form-label">Ülke</label>
+                                <select class="form-control" id="inputUlke">
+                                    <option>Deneme</option>
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <label for="inputKapak" class="form-label">Kaç Kapak</label>
+                                <input type="number" class="form-control" id="inputKapak">
+                            </div>
+                            <div class="col-12">
+                                <label for="inputTarih" class="form-label">Tarih</label>
+                                <input type="date" class="form-control" id="inputTarih">
+                            </div>
+                            <div class="col-12">
+                                <label for="inputSaat" class="form-label">Saat</label>
+                                <input type="time" class="form-control" id="inputSaat">
+                            </div>
+                            <div class="col-12">
+                                <label for="inputTon" class="form-label">Ağırlık (Ton)</label>
+                                <input type="number" class="form-control" id="inputTon">
+                            </div>
+                            <div class="col-12">
+                                <label for="inputUst" class="form-label">Araç Üstü</label>
+                                <select class="form-control" id="inputUst">
+                                    <option value="acik">Açik</option>
+                                    <option value="kapali">Kapalı</option>
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <label for="inputCesit" class="form-label">Araç Çeşidi</label>
+                                <select class="form-control" id="inputCesit">
+                                    <option value="acik">Asansörlü</option>
+                                    <option value="kapali">Şoklu</option>
+                                    <option value="kapali">Tır</option>
+                                    <option value="kapali">Kamyon</option>
+                                </select>
+                            </div>
+                            <div class="col-12">
                                 <label for="inputFiyatMin" class="form-label">Min. Fiyat</label>
                                 <input type="number" class="form-control">
                             </div>
                             <div class="col-12">
                                 <label for="inputFiyatMax" class="form-label">Max. Fiyat</label>
                                 <input type="number" class="form-control">
-                            </div>
-                            <div class="col-12">
-                                <label for="inputIl" class="form-label">İl</label>
-                                <select class="form-control" id="inputIl">
-                  <option>Denizli</option>
-                </select>
-                            </div>
-                            <div class="col-12">
-                                <label for="inputIlce" class="form-label">İlçe</label>
-                                <select class="form-control" id="inputIlce">
-                  <option>Pamukkale</option>
-                </select>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-check form-switch">
-                                    <input class="form-check-input" type="checkbox" id="inputOzellik">
-                                    <label class="form-check-label" for="inputOzellik">Özellik</label>
-                                </div>
                             </div>
                             <div class="col-12">
                                 <div class="g-2 d-grid">
@@ -154,10 +195,13 @@
                                                         <div class="col-12 text-center p-1">
                                                             <div class="row">
                                                                 <div class="col-6">
-                                                                    <i class="bi bi-arrow-left-right m-0"></i>
+                                                                    <span class="d-none d-sm-inline">Nereden/ Nereye
+                                                                    </span>
+                                                                    <i class="bi bi-arrow-left-right"></i>
                                                                 </div>
                                                                 <div class="col-6">
-                                                                    <i class="bi bi-tag m-0"></i>
+                                                                    <span class="d-none d-sm-inline">Fiyat </span>
+                                                                    <i class="bi bi-tag"></i>
                                                                 </div>
                                                                 <div class="col-12">
                                                                     <hr class="m-0">
@@ -177,7 +221,12 @@
                                                     </div>
                                                 </div>
                                                 <div class="col-12 text-center bg-secondary text-light p-1">
-                                                    İ.T: 12.04.22/ Ç.T: 12.06.22
+                                                    <span class="d-none d-sm-inline">İlan Tarihi:</span>
+                                                    <span class="d-sm-none">İ.T:</span>
+                                                    <span>02.04.22</span>
+                                                    <span class="d-none d-sm-inline">/ Çıkış Tarihi:</span>
+                                                    <span class="d-sm-none">Ç.T:</span>
+                                                    <span>09.06.22</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -193,51 +242,22 @@
                                                         </div>
                                                         <div class="col-12 text-center p-1">
                                                             <div class="row">
-                                                                <div class="col-6">
-                                                                    <i class="bi bi-arrow-left-right m-0"></i>
+                                                                <div class="col-4">
+                                                                    <span class="d-none d-sm-inline">Nereden/ Nereye
+                                                                    </span>
+                                                                    <i class="bi bi-arrow-left-right"></i>
                                                                 </div>
-                                                                <div class="col-6">
-                                                                    <i class="bi bi-tag m-0"></i>
+                                                                <div class="col-1 col-sm-2">
+                                                                    <span class="d-none d-sm-inline">Kapak </span>
+                                                                    <i class="bi bi-boxes"></i>
                                                                 </div>
-                                                                <div class="col-12">
-                                                                    <hr class="m-0">
+                                                                <div class="col-4 col-sm-3">
+                                                                    <span class="d-none d-sm-inline">Ürün Çeşidi </span>
+                                                                    <i class="bi bi-truck"></i>
                                                                 </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-12 text-center py-4">
-                                                            <div class="row g-0">
-                                                                <div class="col-6">
-                                                                    İstabul/ İzmir
-                                                                </div>
-                                                                <div class="col-6">
-                                                                    1120₺
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-12 text-center bg-secondary text-light p-1">
-                                                    İ.T: 12.04.22/ Ç.T: 12.06.22
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="bg-light mt-2 border" data-aos="flip-up">
-                                            <div class="row g-0">
-                                                <div class="col-12 col-md-3 col-lg-2">
-                                                    <img src="https://via.placeholder.com/512x512" class="img-fluid w-100 h-100">
-                                                </div>
-                                                <div class="col-12 col-md-9 col-lg-10">
-                                                    <div class="row g-0">
-                                                        <div class="col-12 p-1 bg-secondary text-light text-center">
-                                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, adipisci!
-                                                        </div>
-                                                        <div class="col-12 text-center p-1">
-                                                            <div class="row">
-                                                                <div class="col-6">
-                                                                    <i class="bi bi-arrow-left-right m-0"></i>
-                                                                </div>
-                                                                <div class="col-6">
-                                                                    <i class="bi bi-tag m-0"></i>
+                                                                <div class="col-3">
+                                                                    <span class="d-none d-sm-inline">Fiyat </span>
+                                                                    <i class="bi bi-tag"></i>
                                                                 </div>
                                                                 <div class="col-12">
                                                                     <hr class="m-0">
@@ -246,10 +266,16 @@
                                                         </div>
                                                         <div class="col-12 text-center py-4">
                                                             <div class="row g-0">
-                                                                <div class="col-6">
+                                                                <div class="col-4">
                                                                     İstabul/ İzmir
                                                                 </div>
-                                                                <div class="col-6">
+                                                                <div class="col-1">
+                                                                    6
+                                                                </div>
+                                                                <div class="col-4">
+                                                                    Asansörlü
+                                                                </div>
+                                                                <div class="col-3">
                                                                     1120₺
                                                                 </div>
                                                             </div>
@@ -257,127 +283,12 @@
                                                     </div>
                                                 </div>
                                                 <div class="col-12 text-center bg-secondary text-light p-1">
-                                                    İ.T: 12.04.22/ Ç.T: 12.06.22
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="bg-light mt-2 border" data-aos="flip-up">
-                                            <div class="row g-0">
-                                                <div class="col-12 col-md-3 col-lg-2">
-                                                    <img src="https://via.placeholder.com/512x512" class="img-fluid w-100 h-100">
-                                                </div>
-                                                <div class="col-12 col-md-9 col-lg-10">
-                                                    <div class="row g-0">
-                                                        <div class="col-12 p-1 bg-secondary text-light text-center">
-                                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, adipisci!
-                                                        </div>
-                                                        <div class="col-12 text-center p-1">
-                                                            <div class="row">
-                                                                <div class="col-6">
-                                                                    <i class="bi bi-arrow-left-right m-0"></i>
-                                                                </div>
-                                                                <div class="col-6">
-                                                                    <i class="bi bi-tag m-0"></i>
-                                                                </div>
-                                                                <div class="col-12">
-                                                                    <hr class="m-0">
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-12 text-center py-4">
-                                                            <div class="row g-0">
-                                                                <div class="col-6">
-                                                                    İstabul/ İzmir
-                                                                </div>
-                                                                <div class="col-6">
-                                                                    1120₺
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-12 text-center bg-secondary text-light p-1">
-                                                    İ.T: 12.04.22/ Ç.T: 12.06.22
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="bg-light mt-2 border" data-aos="flip-up">
-                                            <div class="row g-0">
-                                                <div class="col-12 col-md-3 col-lg-2">
-                                                    <img src="https://via.placeholder.com/512x512" class="img-fluid w-100 h-100">
-                                                </div>
-                                                <div class="col-12 col-md-9 col-lg-10">
-                                                    <div class="row g-0">
-                                                        <div class="col-12 p-1 bg-secondary text-light text-center">
-                                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, adipisci!
-                                                        </div>
-                                                        <div class="col-12 text-center p-1">
-                                                            <div class="row">
-                                                                <div class="col-6">
-                                                                    <i class="bi bi-arrow-left-right m-0"></i>
-                                                                </div>
-                                                                <div class="col-6">
-                                                                    <i class="bi bi-tag m-0"></i>
-                                                                </div>
-                                                                <div class="col-12">
-                                                                    <hr class="m-0">
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-12 text-center py-4">
-                                                            <div class="row g-0">
-                                                                <div class="col-6">
-                                                                    İstabul/ İzmir
-                                                                </div>
-                                                                <div class="col-6">
-                                                                    1120₺
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-12 text-center bg-secondary text-light p-1">
-                                                    İ.T: 12.04.22/ Ç.T: 12.06.22
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="bg-light mt-2 border" data-aos="flip-up">
-                                            <div class="row g-0">
-                                                <div class="col-12 col-md-3 col-lg-2">
-                                                    <img src="https://via.placeholder.com/512x512" class="img-fluid w-100 h-100">
-                                                </div>
-                                                <div class="col-12 col-md-9 col-lg-10">
-                                                    <div class="row g-0">
-                                                        <div class="col-12 p-1 bg-secondary text-light text-center">
-                                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, adipisci!
-                                                        </div>
-                                                        <div class="col-12 text-center p-1">
-                                                            <div class="row">
-                                                                <div class="col-6">
-                                                                    <i class="bi bi-arrow-left-right m-0"></i>
-                                                                </div>
-                                                                <div class="col-6">
-                                                                    <i class="bi bi-tag m-0"></i>
-                                                                </div>
-                                                                <div class="col-12">
-                                                                    <hr class="m-0">
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-12 text-center py-4">
-                                                            <div class="row g-0">
-                                                                <div class="col-6">
-                                                                    İstabul/ İzmir
-                                                                </div>
-                                                                <div class="col-6">
-                                                                    1120₺
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-12 text-center bg-secondary text-light p-1">
-                                                    İ.T: 12.04.22/ Ç.T: 12.06.22
+                                                    <span class="d-none d-sm-inline">İlan Tarihi:</span>
+                                                    <span class="d-sm-none">İ.T:</span>
+                                                    <span>02.04.22</span>
+                                                    <span class="d-none d-sm-inline">/ Çıkış Tarihi:</span>
+                                                    <span class="d-sm-none">Ç.T:</span>
+                                                    <span>09.06.22</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -397,10 +308,13 @@
                                                         <div class="col-12 text-center p-1">
                                                             <div class="row">
                                                                 <div class="col-6">
-                                                                    <i class="bi bi-arrow-left-right m-0"></i>
+                                                                    <span class="d-none d-sm-inline">Nereden/ Nereye
+                                                                    </span>
+                                                                    <i class="bi bi-arrow-left-right"></i>
                                                                 </div>
                                                                 <div class="col-6">
-                                                                    <i class="bi bi-tag m-0"></i>
+                                                                    <span class="d-none d-sm-inline">Fiyat </span>
+                                                                    <i class="bi bi-tag"></i>
                                                                 </div>
                                                                 <div class="col-12">
                                                                     <hr class="m-0">
@@ -420,87 +334,12 @@
                                                     </div>
                                                 </div>
                                                 <div class="col-12 text-center bg-secondary text-light p-1">
-                                                    İ.T: 12.04.22/ Ç.T: 12.06.22
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="bg-light mt-2 border" data-aos="flip-up">
-                                            <div class="row g-0">
-                                                <div class="col-12 col-md-3 col-lg-2">
-                                                    <img src="https://via.placeholder.com/512x512" class="img-fluid w-100 h-100">
-                                                </div>
-                                                <div class="col-12 col-md-9 col-lg-10">
-                                                    <div class="row g-0">
-                                                        <div class="col-12 p-1 bg-secondary text-light text-center">
-                                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, adipisci!
-                                                        </div>
-                                                        <div class="col-12 text-center p-1">
-                                                            <div class="row">
-                                                                <div class="col-6">
-                                                                    <i class="bi bi-arrow-left-right m-0"></i>
-                                                                </div>
-                                                                <div class="col-6">
-                                                                    <i class="bi bi-tag m-0"></i>
-                                                                </div>
-                                                                <div class="col-12">
-                                                                    <hr class="m-0">
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-12 text-center py-4">
-                                                            <div class="row g-0">
-                                                                <div class="col-6">
-                                                                    İstabul/ İzmir
-                                                                </div>
-                                                                <div class="col-6">
-                                                                    1120₺
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-12 text-center bg-secondary text-light p-1">
-                                                    İ.T: 12.04.22/ Ç.T: 12.06.22
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="bg-light mt-2 border" data-aos="flip-up">
-                                            <div class="row g-0">
-                                                <div class="col-12 col-md-3 col-lg-2">
-                                                    <img src="https://via.placeholder.com/512x512" class="img-fluid w-100 h-100">
-                                                </div>
-                                                <div class="col-12 col-md-9 col-lg-10">
-                                                    <div class="row g-0">
-                                                        <div class="col-12 p-1 bg-secondary text-light text-center">
-                                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, adipisci!
-                                                        </div>
-                                                        <div class="col-12 text-center p-1">
-                                                            <div class="row">
-                                                                <div class="col-6">
-                                                                    <i class="bi bi-arrow-left-right m-0"></i>
-                                                                </div>
-                                                                <div class="col-6">
-                                                                    <i class="bi bi-tag m-0"></i>
-                                                                </div>
-                                                                <div class="col-12">
-                                                                    <hr class="m-0">
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-12 text-center py-4">
-                                                            <div class="row g-0">
-                                                                <div class="col-6">
-                                                                    İstabul/ İzmir
-                                                                </div>
-                                                                <div class="col-6">
-                                                                    1120₺
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-12 text-center bg-secondary text-light p-1">
-                                                    İ.T: 12.04.22/ Ç.T: 12.06.22
+                                                    <span class="d-none d-sm-inline">İlan Tarihi:</span>
+                                                    <span class="d-sm-none">İ.T:</span>
+                                                    <span>02.04.22</span>
+                                                    <span class="d-none d-sm-inline">/ Çıkış Tarihi:</span>
+                                                    <span class="d-sm-none">Ç.T:</span>
+                                                    <span>09.06.22</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -519,51 +358,22 @@
                                                         </div>
                                                         <div class="col-12 text-center p-1">
                                                             <div class="row">
-                                                                <div class="col-6">
-                                                                    <i class="bi bi-arrow-left-right m-0"></i>
+                                                                <div class="col-4">
+                                                                    <span class="d-none d-sm-inline">Nereden/ Nereye
+                                                                    </span>
+                                                                    <i class="bi bi-arrow-left-right"></i>
                                                                 </div>
-                                                                <div class="col-6">
-                                                                    <i class="bi bi-tag m-0"></i>
+                                                                <div class="col-1 col-sm-2">
+                                                                    <span class="d-none d-sm-inline">Kapak </span>
+                                                                    <i class="bi bi-boxes"></i>
                                                                 </div>
-                                                                <div class="col-12">
-                                                                    <hr class="m-0">
+                                                                <div class="col-4 col-sm-3">
+                                                                    <span class="d-none d-sm-inline">Ürün Çeşidi </span>
+                                                                    <i class="bi bi-truck"></i>
                                                                 </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-12 text-center py-4">
-                                                            <div class="row g-0">
-                                                                <div class="col-6">
-                                                                    İstabul/ İzmir
-                                                                </div>
-                                                                <div class="col-6">
-                                                                    1120₺
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-12 text-center bg-secondary text-light p-1">
-                                                    İ.T: 12.04.22/ Ç.T: 12.06.22
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="bg-light mt-2 border" data-aos="flip-up">
-                                            <div class="row g-0">
-                                                <div class="col-12 col-md-3 col-lg-2">
-                                                    <img src="https://via.placeholder.com/512x512" class="img-fluid w-100 h-100">
-                                                </div>
-                                                <div class="col-12 col-md-9 col-lg-10">
-                                                    <div class="row g-0">
-                                                        <div class="col-12 p-1 bg-secondary text-light text-center">
-                                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, adipisci!
-                                                        </div>
-                                                        <div class="col-12 text-center p-1">
-                                                            <div class="row">
-                                                                <div class="col-6">
-                                                                    <i class="bi bi-arrow-left-right m-0"></i>
-                                                                </div>
-                                                                <div class="col-6">
-                                                                    <i class="bi bi-tag m-0"></i>
+                                                                <div class="col-3">
+                                                                    <span class="d-none d-sm-inline">Fiyat </span>
+                                                                    <i class="bi bi-tag"></i>
                                                                 </div>
                                                                 <div class="col-12">
                                                                     <hr class="m-0">
@@ -572,10 +382,16 @@
                                                         </div>
                                                         <div class="col-12 text-center py-4">
                                                             <div class="row g-0">
-                                                                <div class="col-6">
+                                                                <div class="col-4">
                                                                     İstabul/ İzmir
                                                                 </div>
-                                                                <div class="col-6">
+                                                                <div class="col-1">
+                                                                    6
+                                                                </div>
+                                                                <div class="col-4">
+                                                                    Asansörlü
+                                                                </div>
+                                                                <div class="col-3">
                                                                     1120₺
                                                                 </div>
                                                             </div>
@@ -583,10 +399,35 @@
                                                     </div>
                                                 </div>
                                                 <div class="col-12 text-center bg-secondary text-light p-1">
-                                                    İ.T: 12.04.22/ Ç.T: 12.06.22
+                                                    <span class="d-none d-sm-inline">İlan Tarihi:</span>
+                                                    <span class="d-sm-none">İ.T:</span>
+                                                    <span>02.04.22</span>
+                                                    <span class="d-none d-sm-inline">/ Çıkış Tarihi:</span>
+                                                    <span class="d-sm-none">Ç.T:</span>
+                                                    <span>09.06.22</span>
                                                 </div>
                                             </div>
                                         </div>
+                                    </div>
+                                    <!--Pagination-->
+                                    <div class="d-flex justify-content-center mt-4">
+                                        <nav aria-label="sayfalar">
+                                            <ul class="pagination">
+                                                <li class="page-item">
+                                                    <a class="page-link" href="#" aria-label="Previous">
+                                                        <span aria-hidden="true">&laquo;</span>
+                                                    </a>
+                                                </li>
+                                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                <li class="page-item">
+                                                    <a class="page-link" href="#" aria-label="Next">
+                                                        <span aria-hidden="true">&raquo;</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </nav>
                                     </div>
                                 </div>
                             </div>
@@ -624,45 +465,81 @@
             <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
-            <div>
-                <form class="row g-2">
-                    <div class="col-12">
-                        <label for="inputKelime" class="form-label">Kelime</label>
-                        <input type="text" class="form-control">
+            <form class="row g-2 my-2">
+                <div class="col-12">
+                    <label for="inputKelime" class="form-label">Kelime</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="col-12">
+                    <label for="inputUrunCesidi" class="form-label">Ürün Çeşidi</label>
+                    <select class="form-control" id="inputUrunCesidi">
+                        <option>Deneme</option>
+                    </select>
+                </div>
+                <div class="col-12">
+                    <label for="inputNereden" class="form-label">Nereden</label>
+                    <select class="form-control" id="inputNereden">
+                        <option>Deneme</option>
+                    </select>
+                </div>
+                <div class="col-12">
+                    <label for="inputNereye" class="form-label">Nereye</label>
+                    <select class="form-control" id="inputNereye">
+                        <option>Deneme</option>
+                    </select>
+                </div>
+                <div class="col-12">
+                    <label for="inputUlke" class="form-label">Ülke</label>
+                    <select class="form-control" id="inputUlke">
+                        <option>Deneme</option>
+                    </select>
+                </div>
+                <div class="col-12">
+                    <label for="inputKapak" class="form-label">Kaç Kapak</label>
+                    <input type="number" class="form-control" id="inputKapak">
+                </div>
+                <div class="col-12">
+                    <label for="inputTarih" class="form-label">Tarih</label>
+                    <input type="date" class="form-control" id="inputTarih">
+                </div>
+                <div class="col-12">
+                    <label for="inputSaat" class="form-label">Saat</label>
+                    <input type="time" class="form-control" id="inputSaat">
+                </div>
+                <div class="col-12">
+                    <label for="inputTon" class="form-label">Ağırlık (Ton)</label>
+                    <input type="number" class="form-control" id="inputTon">
+                </div>
+                <div class="col-12">
+                    <label for="inputUst" class="form-label">Araç Üstü</label>
+                    <select class="form-control" id="inputUst">
+                        <option value="acik">Açik</option>
+                        <option value="kapali">Kapalı</option>
+                    </select>
+                </div>
+                <div class="col-12">
+                    <label for="inputCesit" class="form-label">Araç Çeşidi</label>
+                    <select class="form-control" id="inputCesit">
+                        <option value="acik">Asansörlü</option>
+                        <option value="kapali">Şoklu</option>
+                        <option value="kapali">Tır</option>
+                        <option value="kapali">Kamyon</option>
+                    </select>
+                </div>
+                <div class="col-12">
+                    <label for="inputFiyatMin" class="form-label">Min. Fiyat</label>
+                    <input type="number" class="form-control">
+                </div>
+                <div class="col-12">
+                    <label for="inputFiyatMax" class="form-label">Max. Fiyat</label>
+                    <input type="number" class="form-control">
+                </div>
+                <div class="col-12">
+                    <div class="g-2 d-grid">
+                        <input class="btn btn-dark" type="submit" value="Filtrele">
                     </div>
-                    <div class="col-6">
-                        <label for="inputFiyatMin" class="form-label">Min. Fiyat</label>
-                        <input type="number" class="form-control">
-                    </div>
-                    <div class="col-6">
-                        <label for="inputFiyatMax" class="form-label">Max. Fiyat</label>
-                        <input type="number" class="form-control">
-                    </div>
-                    <div class="col-12">
-                        <label for="inputIl" class="form-label">İl</label>
-                        <select class="form-control" id="inputIl">
-              <option>Denizli</option>
-            </select>
-                    </div>
-                    <div class="col-12">
-                        <label for="inputIlce" class="form-label">İlçe</label>
-                        <select class="form-control" id="inputIlce">
-              <option>Pamukkale</option>
-            </select>
-                    </div>
-                    <div class="col-12">
-                        <div class="form-check form-switch">
-                            <input class="form-check-input" type="checkbox" id="inputOzellik">
-                            <label class="form-check-label" for="inputOzellik">Özellik</label>
-                        </div>
-                    </div>
-                    <div class="col-12">
-                        <div class="g-2 d-grid">
-                            <input class="btn btn-dark" type="submit" value="Filtrele">
-                        </div>
-                    </div>
-                </form>
-            </div>
+                </div>
+            </form>
         </div>
     </div>
 
