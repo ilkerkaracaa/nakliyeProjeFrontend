@@ -35,7 +35,9 @@
             <div class="col-12 p-0">
                 <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-4">
                     <div class="container-fluid">
-                        <a class="navbar-brand" href="#">NAKLİYE PROJESİ</a>
+                        <a class="navbar-brand" href="#">
+                            <img src="assets/img/logo.png" class="img-fluid" style="max-width: 128px;">
+                        </a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -136,25 +138,24 @@
                             <input type="text" class="form-control" id="inputFirmaAdres" required>
                         </div>
                         <div class="col-12">
-                            <label class="form-label" for="inputFirmaSehirler">Hizmet Verilen Şehirler</label>
-                            <select id="inputFirmaSehirler" class="form-control">
-                                <option value="Denizli">Denizli</option>
-                                <option value="İzmir">İzmir</option>
-                                <option value="İstanbul">İstanbul</option>
-                            </select>
-                        </div>
-                        <div class="col-6">
-                            <div class="d-grid g-2">
-                                <span id="btnEkle" class="btn btn-primary">Ekle</span>
-                            </div>
-                        </div>
-                        <div class="col-6">
-                            <div class="d-grid g-2">
-                                <span id="btnCikar" class="btn btn-danger">Çıkar</span>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <input id="inputFirmaEklenen" type="text" class="form-control" readonly>
+                            <label for="inputFirmaSehirler" class="form-label">Hizmet Verilen Şehirler</label>
+                            <ul class="list-group" style="max-height: 128px; overflow-y: scroll; overflow-y: scroll;">
+                                <li class="list-group-item">
+                                    <input class="form-check-input me-1" type="checkbox"> İzmir
+                                </li>
+                                <li class="list-group-item">
+                                    <input class="form-check-input me-1" type="checkbox"> Denizli
+                                </li>
+                                <li class="list-group-item">
+                                    <input class="form-check-input me-1" type="checkbox"> Balıkesir
+                                </li>
+                                <li class="list-group-item">
+                                    <input class="form-check-input me-1" type="checkbox"> Manisa
+                                </li>
+                                <li class="list-group-item">
+                                    <input class="form-check-input me-1" type="checkbox"> Aydın
+                                </li>
+                            </ul>
                         </div>
                         <div class="col-12">
                             <label class="form-check-label" for="inputSozlesme"><span><a href="#">Sözleşme</a></span>'yi okudum onaylıyorum.</label>
@@ -174,6 +175,10 @@
                             <input type="text" class="form-control" id="inputBireyAd" required>
                         </div>
                         <div class="col-6">
+                            <label for="inputBireySoyad" class="form-label">Soyad</label>
+                            <input type="text" class="form-control" id="inputBireySoyad" required>
+                        </div>
+                        <div class="col-12">
                             <label for="inputBireyNick" class="form-label">Kullanıcı Adı</label>
                             <input type="text" class="form-control" id="inputBireyNick" required>
                         </div>
@@ -251,32 +256,9 @@
     </div>
 
     <script>
-        const btnAdd = document.getElementById('btnEkle')
-        const btnRemove = document.getElementById('btnCikar')
-        const inputFirmaSehirler = document.getElementById('inputFirmaSehirler')
-        const inputFirmaEklenen = document.getElementById('inputFirmaEklenen')
-
         const inputTur = document.getElementById('inputTur')
         const formFirma = document.getElementById('formFirma')
         const formBireysel = document.getElementById('formBireysel')
-
-        btnAdd.addEventListener('click', function() {
-            if (inputFirmaEklenen.value.search(inputFirmaSehirler.value) == -1) {
-                if (inputFirmaEklenen.value == "") {
-                    inputFirmaEklenen.value += inputFirmaSehirler.value
-                } else {
-                    inputFirmaEklenen.value += ', ' + inputFirmaSehirler.value
-                }
-            }
-        })
-
-        btnRemove.addEventListener('click', function() {
-            if (inputFirmaEklenen.value.search(inputFirmaSehirler.value + ', ') != -1) {
-                inputFirmaEklenen.value = inputFirmaEklenen.value.replace(inputFirmaSehirler.value + ', ', '')
-            } else if (inputFirmaEklenen.value.search(inputFirmaSehirler.value) != -1) {
-                inputFirmaEklenen.value = inputFirmaEklenen.value.replace(inputFirmaSehirler.value, '')
-            }
-        })
 
         inputTur.addEventListener("change", function() {
             formBireysel.classList.remove("d-block")

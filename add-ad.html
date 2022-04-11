@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nakliye Proje - İlan Ekle</title>
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!--Main CSS-->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!--Bootstrap Icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <!--Aos CSS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!--Preloader-->
+    <div class="loader-wrapper">
+        <div class="loader"></div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <!--Top Banner-->
+            <div class="col-12 text-center p-0 d-none d-lg-block">
+                <img src="https://via.placeholder.com/2048x256" class="img-fluid">
+            </div>
+            <!--Navbar-->
+            <div class="col-12 p-0">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-4">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">
+                            <img src="assets/img/logo.png" class="img-fluid" style="max-width: 128px;">
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <form class="d-flex my-4 my-lg-0">
+                                <input class="form-control me-2 bg-dark text-light" type="search" placeholder="Arama" aria-label="Search">
+                                <button class="btn btn-lg btn-secondary" type="submit"><i class="bi bi-search"></i></button>
+                            </form>
+                            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-house"></i> Ana Sayfa</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><i class="bi bi-person-fill"></i> Giriş Yap</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><i class="bi bi-person-heart"></i> Kayıt Ol</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><i class="bi bi-file-earmark-plus"></i> İlan Ver</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><i class="bi bi-building"></i> Firmalarımız</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <!--Left Banner-->
+            <div class="col-lg-2 d-none d-lg-block  p-0">
+                <img id="left-banner" src="https://via.placeholder.com/256x1024" class="img-fluid sticky-top w-100" style="z-index: -1">
+            </div>
+            <!--Main-->
+            <div class="col-lg-8 p-4">
+                <div class="row g-2">
+                    <div class="col-12">
+                        <h2><i class="bi bi-pencil-square"></i> İlan Ekle</h2>
+                    </div>
+                    <div class="col-12 my-2">
+                        <label for="inputTur" class="form-label">İlan Türü</label>
+                        <select id="inputTur" class="form-control">
+                            <option value="bireysel">Yük Sahibi</option>
+                            <option value="firma">Nakliyeci</option>
+                        </select>
+                    </div>
+                </div>
+                <div id="formNakliyeci" class="d-none">
+                    <form class="row g-2">
+                        <div class="col-12">
+                            <label for="inputNakBaslik" class="form-label">İlan Başlığı</label>
+                            <input type="text" class="form-control" id="inputNakBaslik" required>
+                        </div>
+                        <div class="col-12">
+                            <label for="inputNakUrunCesidi" class="form-label">Araç Çeşidi</label>
+                            <select class="form-control" id="inputNakUrunCesidi" required>
+                                <option>Asansör</option>
+                                <option>Şoklu Tır</option>
+                                <option>Kamyon</option>
+                                <option>Tır</option>
+                            </select>
+                        </div>
+                        <div class="col-12">
+                            <label for="inputNakSehirler" class="form-label">Yük Alabileceğiniz Şehirler</label>
+                            <ul class="list-group" style="max-height: 128px; overflow-y: scroll; overflow-y: scroll;">
+                                <li class="list-group-item">
+                                    <input class="form-check-input me-1" type="checkbox"> İzmir
+                                </li>
+                                <li class="list-group-item">
+                                    <input class="form-check-input me-1" type="checkbox"> Denizli
+                                </li>
+                                <li class="list-group-item">
+                                    <input class="form-check-input me-1" type="checkbox"> Balıkesir
+                                </li>
+                                <li class="list-group-item">
+                                    <input class="form-check-input me-1" type="checkbox"> Manisa
+                                </li>
+                                <li class="list-group-item">
+                                    <input class="form-check-input me-1" type="checkbox"> Aydın
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-12">
+                            <label for="inputNakEk" class="form-label">Ek Yük Alınılacaksa Yükün Adı</label>
+                            <input type="text" class="form-control" id="inputNakEk" required>
+                        </div>
+                        <div class="col-6">
+                            <label for="inputNakNereden" class="form-label">Nereden</label>
+                            <select class="form-control" id="inputNakNereden" required>
+                                <option>Denizli</option>
+                            </select>
+                        </div>
+                        <div class="col-6">
+                            <label for="inputNakNereye" class="form-label">Nereye</label>
+                            <select class="form-control" id="inputNakNereye" required>
+                                <option>Pamukkale</option>
+                            </select>
+                        </div>
+                        <div class="col-12">
+                            <label for="inputNakTarih" class="form-label">Yola Çıkma Tarih Saat</label>
+                            <input type="datetime-local" class="form-control" id="inputNakTarih">
+                        </div>
+                        <div class="col-4">
+                            <label for="inputNakKapak" class="form-label">Kaç Kapak Boş</label>
+                            <input type="number" class="form-control" id="inputNakKapak">
+                        </div>
+                        <div class="col-4">
+                            <label for="inputNakTon" class="form-label">Alabileceğiniz Yük(Ton)</label>
+                            <input type="number" class="form-control" id="inputYukTon">
+                        </div>
+                        <div class="col-4">
+                            <label for="inputNakFiyat" class="form-label">Fiyat</label>
+                            <input type="number" class="form-control" id="inputNakFiyat">
+                        </div>
+                        <div class="col-12">
+                            <label for="inputNakYukCesit" class="form-label">Alabileceğiniz Yük Çeşidi</label>
+                            <ul class="list-group" style="max-height: 128px; overflow-y: scroll; overflow-y: scroll;">
+                                <li class="list-group-item">
+                                    <input class="form-check-input me-1" type="checkbox"> Hepsi
+                                </li>
+                                <li class="list-group-item">
+                                    <input class="form-check-input me-1" type="checkbox"> Tarım
+                                </li>
+                                <li class="list-group-item">
+                                    <input class="form-check-input me-1" type="checkbox"> Test
+                                </li>
+                                <li class="list-group-item">
+                                    <input class="form-check-input me-1" type="checkbox"> Deneme
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-12">
+                            <label for="inputNakTelefon" class="form-label">Telefon</label>
+                            <input type="text" class="form-control" id="inputNakTelefon" required>
+                        </div>
+                        <div class="col-12">
+                            <label for="inputNakFoto" class="form-label">Fotoğraflar</label>
+                            <input class="form-control" type="file" id="inputNakFoto" multiple>
+                        </div>
+                        <div class="col-12">
+                            <label for="inputNakAciklama" class="form-label">Ek Açıklama</label>
+                            <textarea id="inputNakAciklama" class="form-control" rows="5"></textarea>
+                        </div>
+                        <div class="col-12">
+                            <div class="d-grid g-2">
+                                <input type="submit" value="İlan Ekle" class="btn btn-secondary">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div id="formYukSahibi">
+                    <form class="row g-2">
+                        <div class="col-12">
+                            <label for="inputYukUrunCesidi" class="form-label">Ürün Çeşidi</label>
+                            <select class="form-control" id="inputYukUrunCesidi" required>
+                                <option>Test</option>
+                            </select>
+                        </div>
+                        <div class="col-12">
+                            <label for="inputYukAd" class="form-label">Ürünün Tam Olarak Adını Yazınız</label>
+                            <input type="text" class="form-control" id="inputYukAd" required>
+                        </div>
+                        <div class="col-12">
+                            <label for="inputYukBaslik" class="form-label">İlan Başlığı</label>
+                            <input type="text" class="form-control" id="inputYukBaslik" required>
+                        </div>
+                        <div class="col-6">
+                            <label for="inputYukNereden" class="form-label">Nereden</label>
+                            <select class="form-control" id="inputYukNereden" required>
+                                <option>Denizli</option>
+                            </select>
+                        </div>
+                        <div class="col-6">
+                            <label for="inputYukNereye" class="form-label">Nereye</label>
+                            <select class="form-control" id="inputYukNereye" required>
+                                <option>Pamukkale</option>
+                            </select>
+                        </div>
+                        <div class="col-6">
+                            <label for="inputYukCesit" class="form-label">İstediğiniz Araç Çeşidi</label>
+                            <select class="form-control" id="inputYukCesit" required>
+                                <option>Farketmez</option>
+                                <option>Asansörlü</option>
+                                <option>Şoklu</option>
+                                <option>Kamyon</option>
+                                <option>Tır</option>
+                            </select>
+                        </div>
+                        <div class="col-6">
+                            <label for="inputYukUst" class="form-label">Kasa Tipi</label>
+                            <select class="form-control" id="inputYukUst" required>
+                                <option>Açık</option>
+                                <option>Kapalı</option>
+                            </select>
+                        </div>
+                        <div class="col-4">
+                            <label for="inputYukFiyat" class="form-label">Aklınızdaki Fiyat</label>
+                            <input type="number" class="form-control" id="inputYukFiyat">
+                        </div>
+                        <div class="col-4">
+                            <label for="inputYukTon" class="form-label">Kaç Ton</label>
+                            <input type="number" class="form-control" id="inputYukTon">
+                        </div>
+                        <div class="col-4">
+                            <label for="inputYukKapak" class="form-label">Kaç Kapak</label>
+                            <input type="number" class="form-control" id="inputYukKapak">
+                        </div>
+                        <div class="col-12">
+                            <label for="inputYukTarih" class="form-label">Yükün Gideceği Tarih Saat</label>
+                            <input type="datetime-local" class="form-control" id="inputTarih">
+                        </div>
+                        <div class="col-12">
+                            <label for="inputYukTelefon" class="form-label">Telefon</label>
+                            <input type="text" class="form-control" id="inputYukTelefon" required>
+                        </div>
+                        <div class="col-12">
+                            <label for="inputYukFoto" class="form-label">Fotoğraflar</label>
+                            <input class="form-control" type="file" id="inputYukFoto" multiple>
+                        </div>
+                        <div class="col-12">
+                            <label for="inputYukAciklama" class="form-label">Ek Açıklama</label>
+                            <textarea id="inputYukAciklama" class="form-control" rows="5"></textarea>
+                        </div>
+                        <div class="col-12">
+                            <div class="d-grid g-2">
+                                <input type="submit" value="İlan" class="btn btn-secondary">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!--Right Banner-->
+            <div class="col-lg-2 d-none d-lg-block p-0">
+                <img src="https://via.placeholder.com/256x1024" class="img-fluid sticky-top w-100" style="z-index: -1">
+            </div>
+            <!--Footer-->
+            <div class="col-12 text-center p-4 text-light bg-dark">
+                <div class="row g-2">
+                    <div class="col-sm-4">
+                        Nakliye Projesi © 2022
+                    </div>
+                    <div class="col-sm-4">
+                        <i class="bi bi-facebook"></i>
+                        <i class="bi bi-instagram"></i>
+                        <i class="bi bi-whatsapp"></i>
+                    </div>
+                    <div class="col-sm-4">
+                        Email: info@nakliyeprojesi.com
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const inputTur = document.getElementById('inputTur')
+        const formNakliyeci = document.getElementById('formNakliyeci')
+        const formYukSahibi = document.getElementById('formYukSahibi')
+
+        inputTur.addEventListener("change", function() {
+            formYukSahibi.classList.remove("d-block")
+            formYukSahibi.classList.remove("d-none")
+            formNakliyeci.classList.remove("d-block")
+            formNakliyeci.classList.remove("d-none")
+            if (inputTur.value == 'firma') {
+                formNakliyeci.classList.add("d-block")
+                formYukSahibi.classList.add("d-none")
+            } else {
+                formYukSahibi.classList.add("d-block")
+                formNakliyeci.classList.add("d-none")
+            }
+        })
+    </script>
+
+    <!--AOS JS-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!--Bootstrap JS-->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!--Main JS-->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
